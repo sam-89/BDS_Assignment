@@ -6,3 +6,5 @@ spotify-recommendation-system-main/
 Links.docx
 Spotify_Track_Genre.csv
 .cache
+spotify_millsongdata.csv
+mainApp3.py
