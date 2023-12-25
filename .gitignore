@@ -12,3 +12,4 @@ df.pkl
 generate_palylist_recos.pkl
 spotify_df.pkl
 similarity.pkl
+*.pkl
