@@ -78,8 +78,9 @@ def get_song_details(song_name, artist_name):
         if artist_info:
             genres = artist_info['genres']
         
+
         # Create a dictionary containing all the information
-        # Create a dictionary containing all the information
+        # To be used as OLTP query to insert data into MongoDB
         song_info = {
             'id': song_id,
             'artists': artist_name,
@@ -142,7 +143,6 @@ def recommend(song):
 
 
 ## UI - Interface
-# Displaying an image and details above the header
 st.image('images/BITS_Logo.png', width=200)
 st.markdown('''
         #### This Project was done as a part of Big Data and Systems Assignment.
@@ -175,7 +175,7 @@ if st.button('Show Recommendation'):
             st.text(recommended_music_names[i])
             st.image(recommended_music_posters[i])
 
-# OLTP query execution section
+# OLTP query execution UI Section
 st.sidebar.header("Execute OLTP Queries")
 query_type = st.sidebar.selectbox("Select Query Type", ["Find One", "Find", "Count"])
 
