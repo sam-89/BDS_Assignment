@@ -8,3 +8,7 @@ Spotify_Track_Genre.csv
 .cache
 spotify_millsongdata.csv
 mainApp3.py
+df.pkl
+generate_palylist_recos.pkl
+spotify_df.pkl
+similarity.pkl
